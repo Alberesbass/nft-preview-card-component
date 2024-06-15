@@ -1,0 +1,147 @@
+body {
+  background-color: var(--bgc-principal);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 25px;
+
+  flex-direction: column;
+}
+
+.cartao-nft {
+  max-width: 350px;
+  background-color: var(--bgc-card);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.cartao-nft .imagem-link {
+  position: relative;
+  display: flex;
+}
+
+.cartao-nft .imagem-link .imagem {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cartao-nft .imagem-link::before {
+  content: "";
+  background-color: var(--cor-primaria-media);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.cartao-nft .imagem-link::after {
+  content: "";
+  background: url(../img/icon-view.svg) no-repeat center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.cartao-nft .imagem-link:hover::before {
+  opacity: 0.4;
+}
+
+.cartao-nft .imagem-link:hover::after {
+  opacity: 1;
+}
+
+.cartao-nft .titulo-link .titulo {
+  color: var(--cor-especial-texto);
+  font-size: 22px;
+  margin: 25px 0 20px;
+  font-weight: 600;
+}
+
+.cartao-nft .titulo-link .titulo:hover {
+  color: var(--cor-primaria-media);
+}
+
+.cartao-nft .sobre {
+  color: var(--cor-primaria-suave);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+
+.cartao-nft .informacoes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.cartao-nft .informacoes .preco {
+  color: var(--cor-primaria-media);
+  display: flex;
+}
+
+.cartao-nft .informacoes .preco::before {
+  content: "";
+  background: url(../img/icon-ethereum.svg) center no-repeat;
+  display: inline-block;
+  width: 11px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.cartao-nft .informacoes .dias-restantes {
+  color: var(--cor-primaria-suave);
+  display: flex;
+}
+
+.cartao-nft .informacoes .dias-restantes::before {
+  content: "";
+  background: url(../img/icon-clock.svg) center no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.cartao-nft .criador {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--bgc-line);
+  padding-top: 15px;
+}
+
+.cartao-nft .criador .avatar {
+  max-width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.cartao-nft .criador .texto {
+  color: var(--bgc-line);
+}
+
+.cartao-nft .criador .nome {
+  color: var(--cor-especial-texto);
+}
+
+.cartao-nft .criador .nome:hover {
+  color: var(--cor-primaria-media);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

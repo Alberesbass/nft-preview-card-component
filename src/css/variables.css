@@ -1,0 +1,10 @@
+:root {
+  --cor-primaria-suave: hsl(215, 51%, 70%);
+  --cor-primaria-media: hsl(178, 100%, 50%);
+
+  --bgc-principal: hsl(217, 54%, 11%);
+  --bgc-card: hsl(216, 50%, 16%);
+  --bgc-line: hsl(215, 32%, 27%);
+
+  --cor-especial-texto: hsl(0, 0%, 100%);
+}
